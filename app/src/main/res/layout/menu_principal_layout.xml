@@ -14,18 +14,19 @@
 
         <ImageView
             android:scaleType="centerInside"
-            android:id="@+id/idImgProduto"
+            android:id="@+id/idImgMusica"
             android:layout_width="170dp"
-            #666
+            android:src="#666"
             android:layout_height="200dp"/>
 
         <TextView
-            android:id="@+id/txtDescrProduto"
+            android:id="@+id/txtNomeMusica"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_margin="5sp"
             android:textSize="20sp"
+            android:text="Musica Boa"
             android:textStyle="bold" />
 
     </LinearLayout>
