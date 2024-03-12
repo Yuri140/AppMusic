@@ -1,34 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/idCardMusica"
-    android:layout_width="180dp"
-    android:layout_height="250dp"
-    android:layout_margin="5dp">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
-    <LinearLayout
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="5dp"
-        android:gravity="center_horizontal"
-        android:orientation="vertical">
+        android:id="@+id/idRecyclerMusicas"/>
 
-        <ImageView
-            android:scaleType="centerInside"
-            android:id="@+id/idImgMusica"
-            android:layout_width="170dp"
-            android:src="#666"
-            android:layout_height="200dp"/>
-
-        <TextView
-            android:id="@+id/txtNomeMusica"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="5sp"
-            android:textSize="20sp"
-            android:text="Musica Boa"
-            android:textStyle="bold" />
-
-    </LinearLayout>
-
-</com.google.android.material.card.MaterialCardView>
+</LinearLayout>
