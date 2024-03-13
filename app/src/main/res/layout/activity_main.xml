@@ -5,10 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:id="@+id/mainActivity"
     tools:context=".MainActivity">
 
 
     <LinearLayout
+        android:id="@+id/idLinearBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -16,16 +18,19 @@
         >
 
         <ImageView
+            android:id="@+id/imgFotoCard"
             android:layout_width="200px"
             android:layout_height="200px"
             android:src="@drawable/validation" />
 
         <LinearLayout
+            android:id="@+id/idLinearTextos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/txtNome"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Validation"
@@ -33,6 +38,7 @@
                 />
 
             <TextView
+                android:id="@+id/txtDesc"
                 android:layout_margin="5px"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -43,16 +49,19 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:id="@+id/txtRating"
                     android:layout_margin="5px"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/baseline_star"
                     android:text="4.2" />
                 <TextView
+                    android:id="@+id/Share"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:drawableEnd="@drawable/baseline_share"/>
                 <TextView
+                    android:id="@+id/iconAdd"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:drawableEnd="@drawable/baseline_add_task"/>

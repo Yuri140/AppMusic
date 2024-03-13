@@ -1,8 +1,8 @@
 package br.com.etecia.myapp;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -16,8 +16,9 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     RecyclerView recyclerViewMusicas;
-    List<Musicas> lstLivros;
+    List<Musicas> lstMusicas;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,9 +33,9 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerViewMusicas.setLayoutManager(new GridLayoutManager(getApplicationContext(),3));
 
-        MusicasAdapter adapter = new ListaAdapter(getApplicationContext(),lstMusicas);
+        MusicasAdapter adapter = new MusicasAdapter(getApplicationContext(),lstMusicas);
 
-        recyclerViewLivros.setAdapter(adapter);
+        recyclerViewMusicas.setAdapter(adapter);
 
 
 
